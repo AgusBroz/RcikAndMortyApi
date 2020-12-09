@@ -1,8 +1,44 @@
 *{
     margin: 0;
 }
+html{    
+    scroll-behavior: smooth;
+}
 body{
     background-color: rgb(92, 26, 112);
+}
+.landing-page{
+    background: url(../images/main-background.jpeg);
+    background-position: 50% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.main{
+    color: #fff;
+    font-family: 'Open Sans';    
+    margin-left: 100px;
+}
+.main h1{
+    font-size: 5rem;
+}
+.main h2{
+    font-size: 1.5rem;
+}
+.landing-page a{
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    
+}
+.down-button{
+    padding: 25px;
+    color: white;
+    text-align: center;
 }
 .container{
     width: 80%;
@@ -11,6 +47,7 @@ body{
 .card-section{
     display: flex;
     flex-wrap:wrap;
+    justify-content: center;
 }
 .card{
     margin: 10px;
