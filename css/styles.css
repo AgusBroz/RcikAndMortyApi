@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(92, 26, 112);
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.card-section{
+    display: flex;
+    flex-wrap:wrap;
+}
+.card{
+    margin: 10px;
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: rgb(22, 22, 22);
+    font-family: 'Open Sans', sans-serif;
+}
+.card-titles{
+    position: relative;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 22, 22);
+}
+.card-titles h1{
+    font-size: 1.2em;
+    padding-bottom:4px ;
+}
+.status-alive,
+.status-unknown,
+.status-dead{
+    cursor: pointer;
+    padding: 0 15px;    
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+.card-titles h2{
+    font-size: .8em;
+}
+.status-alive{
+    color: rgb(42, 231, 42);
+    border-color:  rgb(42, 231, 42);
+}
+.status-alive:hover{
+    color: white;
+    background-color:rgb(42, 231, 42) ;
+    border-color: rgb(42, 231, 42);
+    transition: all ease-in-out .1s;
+}
+.status-unknown{
+    color:rgb(0, 81, 255);
+    border-color:  (0, 81, 255);
+}
+.status-unknown:hover{
+    color: white;
+    background-color: rgb(0, 81, 255);
+    border-color:rgb(0, 81, 255);
+    transition: all ease-in-out .1s;
+}
+.status-dead{
+    color: rgb(255, 0, 0);
+    border-color:  rgb(255, 0, 0);
+}
+.status-dead:hover{
+    color: white;
+    background-color: rgb(255, 0, 0);
+    border-color:rgb(255, 0, 0);
+    transition: all ease-in-out .1s;
+}
+#planet{
+    font-size:1em ;
+}
